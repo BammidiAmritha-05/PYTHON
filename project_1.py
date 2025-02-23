@@ -28,7 +28,7 @@ def display_tasks(tasks):
 
 # Add a new task
 def add_task(tasks, task):
-    tasks.append((task, False))  # Store as tuple (task, False)
+    tasks.append((task, False))  
     print(f"Task '{task}' added.")
 
 # Remove a task
@@ -60,11 +60,11 @@ while True:
         add_task(tasks, task)
     elif choice == "3":
         display_tasks(tasks)
-        index = int(input("Enter task number to remove: ")) - 1  # Convert to 0-based index
+        index = int(input("Enter task number to remove: ")) - 1  
         remove_task(tasks, index)
     elif choice == "4":
         display_tasks(tasks)
-        index = int(input("Enter task number to mark complete: ")) - 1  # Convert to 0-based index
+        index = int(input("Enter task number to mark complete: ")) - 1  
         mark_complete(tasks, index)
     elif choice == "5":
         save_tasks(tasks) 
